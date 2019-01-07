@@ -1,0 +1,5 @@
+a=input()
+b,c,d=a.split()
+A=int(b)+int(c)+int(d)
+print(A)
+print(round(A/3, 1))
