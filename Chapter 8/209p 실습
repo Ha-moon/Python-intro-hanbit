@@ -1,0 +1,30 @@
+# 8장 실습프로젝트. 2018/04/24
+
+a=[]
+
+print('5명의 평가 점수를 입력하세요! (100점 만점)')
+
+
+while len(a)<5:
+    b=[int(input('점수 입력 : '))]
+    a=a+b
+
+print('\n##총 입력 점수##')
+for B in a:
+    print(B,'점')
+
+print('\n##제거 대상 점수##')
+print('-최고 점수 : ', max(a),'점')
+print('-최소 점수 : ', min(a),'점')
+
+a.remove(max(a))
+a.remove(min(a))
+print('\n##최종 입력 점수##')
+for B in a:
+    print(B,'점')
+
+total = sum(a)
+avg = round(total/3, 2)
+print('-----------------------')
+print('-총점 :',total,'점')
+print('-평균 :',avg,'점')
