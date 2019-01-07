@@ -1,2 +1,2 @@
 # Python-intro-hanbit
-# programming introduction easy learning by Python
+# 2018 programming introduction easy learning by Python
