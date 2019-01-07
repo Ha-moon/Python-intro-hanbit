@@ -1,0 +1,21 @@
+# 9장 심화 프로젝트, 2018/05/08
+
+count = int(input('입력하는 학생수가 총 몇명인가요? : '))
+
+print('학생의 이름과 시험 점수를 차례대로 입력하세요!')
+
+num=1
+program_list1=[]
+program_list2=[]
+
+while num<= count:
+    print(num,'번째 학생=====')
+    name=input('*이름: ')
+    enjoy=input('*취미: ')
+    program_list1.append(name)
+    program_list2.append(enjoy)
+    num=num+1
+
+print('\n ==전체 학생 리스트 정보 : ',program_list1)
+total=set(program_list2)
+print('\n ==전체 취미 세트 정보 : ',total)
